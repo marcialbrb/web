@@ -3,16 +3,24 @@
 from flask import Flask, render_template,url_for,redirect, request, flash
 from flask_wtf.csrf import CSRFProtect
 from flask_bootstrap import Bootstrap
-from config import DevelopmentCofig
-from flask import Blueprint
-from flask_paginate import Pagination, get_page_parameter
+from config import DevelopmentConfig
+
+from decouple import config as config_decouple
 
 import forms #importando mi archivo forms.py
+import config
 
-app = Flask(__name__)
+def create_app(enviroment):
+    app = Flask(__name__)
+    Bootstrap(app)
+    app.config.from_object(DevelopmentConfig)
+    
+enviroment = config['development']
+if config_decouple('PRODUCTION', default=False):
+        enviroment = config['production']
 
-Bootstrap(app)
-app.config.from_object(DevelopmentCofig)
+app = create_app(enviroment)
+
 #PROTECCIÓN DE SEGURIDAD CSRF
 csrf = CSRFProtect()
 
