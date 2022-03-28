@@ -91,4 +91,4 @@ def p2website():
 
 if __name__ == "__main__":
     csrf.init_app(app)
-    app.run(port=8100)
+    app.run
