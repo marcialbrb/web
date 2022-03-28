@@ -8,12 +8,13 @@ from config import DevelopmentConfig
 from decouple import config as config_decouple
 
 import forms #importando mi archivo forms.py
-import config
+from config import config
 
-def create_app():
+def create_app(enviroment):
     app = Flask(__name__)
     Bootstrap(app)
-    app.config.from_object(DevelopmentConfig)
+    app.config.from_object(enviroment)
+    return app
     
 enviroment = config['development']
 if config_decouple('PRODUCTION', default=False):
