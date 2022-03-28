@@ -10,7 +10,7 @@ from decouple import config as config_decouple
 import forms #importando mi archivo forms.py
 import config
 
-def create_app(enviroment):
+def create_app():
     app = Flask(__name__)
     Bootstrap(app)
     app.config.from_object(DevelopmentConfig)
