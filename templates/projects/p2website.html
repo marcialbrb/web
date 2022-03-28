@@ -1,0 +1,44 @@
+{% extends 'base/base.html' %}
+
+{% block body %}
+<!--BANNER-->
+<div class="container-fluid" style="margin-top: 1rem;">
+    <img src="{{ url_for('static', filename='img/projects/2website/banner.jpg')}}" class="img-fluid" alt="...">
+</div>
+
+<!-- HEADER --> 
+<div class="row-fluid">
+    <div class="container">
+        <figure class="text-center">
+            <h1 class="display-1"><b>My first website - Hello, World!</b></h1>
+            <p class="lead">
+                The development about this web, my first website. A dream since i was a kid.
+            </p>
+        </figure>
+    </div>
+</div>
+
+<!--CONTENT-->
+<div class="container">
+    <h3>March, 2022.</h3>
+
+    <p>Since I was a kid, I had the dream of having my own website, I remember when I was only 7 years old I told my dad to create one for me, obviously he didn't know anything about it, even though he worked in the technology area. All this in the year 2004, the knowledge of web development was not so standardized and much less for a 7 year old kid.</p>
+
+    <p>Years went by and many dreams in between displaced this one, with time I dedicated myself to other things like studying at the university or going out with friends and playing video games.</p>
+
+    <p>Until a couple of months ago I started studying the Python programming language. I must admit that after several attempts of different languages like C++, C, Java, Javascript, this was the one I liked the most, I found it easy to learn, so comfortable that I said I MUST DEDICATE TO DOMINATE THIS LANGUAGE.</p>
+
+    <p>I wanted to go into the process automation area, but first... I had to fulfill that childhood dream. I looked for information on frameworks and libraries, and I found Flask. After a few days I started with everything, giving shape to my ideas to be able to have this website.</p>
+
+    <p>I thought it was a good idea to have a website where I show who I am, what my tastes are and show what I love to do: draw, take pictures and obviously show my projects and the development of all my ideas.</p>
+
+    <p>There are many things to improve, many things to learn, but finally I can say that I FULFILLED MY CHILD DREAM, to have my own website.</p>
+
+    <p>I am happy.</p>
+
+    <div>
+        <a href="{{ url_for('projects')}}" class="btn btn-primary">Go back</a>
+    </div>
+</div>
+
+{% endblock%}

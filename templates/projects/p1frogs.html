@@ -1,0 +1,49 @@
+{% extends 'base/base.html' %}
+
+{% block body %}
+<!--BANNER-->
+<div class="container-fluid" style="margin-top: 1rem;">
+    <img src="{{ url_for('static', filename='img/projects/1frogs/banner.png')}}" class="img-fluid" alt="...">
+</div>
+
+<!-- HEADER --> 
+<div class="row-fluid">
+    <div class="container">
+        
+        <figure class="text-center">
+            <h1 class="display-1"><b>The Frog's Adventure - NFT Collection</b></h1>
+            <p class="lead">
+                The Frog's Adventure is a very limited collection of 222 NFTs that live on the Polygon blockchain
+            </p>
+        </figure>
+    </div>
+</div>
+<!--CONTEND-->
+<div class="container">
+    <div class="clearfix">
+        
+        <h3>January, 2022</h3>
+    
+        <p>This project was born from the inspiration of retro video games made in pixels and 8 bits. I was doing a lot of research on how to make pixel art, until I found a program called Asepriste that I found very interesting, I really liked its interface and I started to make strokes in it.</p>
+        
+        <img src="{{ url_for('static',filename='img/frogdraw.jpg') }}" alt="" style="width:18rem;" class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid" >
+        <!--FALTA ACOMODAR IMAGENES Y MAS DETALLES EN EL POST-->
+
+        <p>I wanted to do something more than a pixel drawing, so I realized the boom that NFT were coming, I discovered that the most famous ones are of animals: an ape, a cat, a bear, among others. I wanted to make something that is funny but at the same time can be brave, I immediately came up with the idea of a fighting frog.</p>
+
+        <p>I thought frogs could be warriors, wizards, knights or farmers. I started working on their designs, their weapons, their costumes, their accessories, and from there this 222 NFT project was born.</p>
+            
+        <p>I decided to publish them in case someone liked a design and wanted to have it, but my main goal was always ART, not money.</p>
+            
+        <p>It was a very nice experience to see something that you have in your mind can be embodied and come to life. Pixel by pixel, color by color. Everything is magical when it's done with love and care.</p>
+            
+        <p>You can see my little frogs published on the <a href="https://opensea.io/collection/thefrogsadventure" target="_blank">OpenSea</a> web.</p>
+
+    </div>
+
+    <div>
+        <a href="{{ url_for('projects')}}" class="btn btn-primary"> Go back</a>
+    </div>
+</div>
+
+{% endblock %}

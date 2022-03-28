@@ -1,0 +1,44 @@
+{% extends 'base/base.html' %}
+
+{% block body%}
+<!-- HEADER --> 
+<div class="row-fluid">
+    <div class="container">
+        
+        <figure class="text-center">
+            <h1 class="display-1"><b>PROJECTS</b></h1>
+            <p class="lead">
+                Explore my ideas and my dreams
+            </p>
+        </figure>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4">
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="{{ url_for('static', filename='/img/banner.jpg') }}" class="card-img" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">The Frog's Adventure - NFT Collection</h5>
+                    <p class="card-text"> A collection of 222 NFT created on Aseprite. Polygon blockchain.</p>
+                    <a href="{{ url_for('p1frogs') }}" class="btn btn-primary">See more...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col d-flex justify-content-center mb-4">
+            <div class="card" style="width: 18rem;">
+                <img src="{{ url_for('static', filename='/img/website.jpg') }}" class="card-img" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">My first website - Hello, World!</h5>
+                    <p class="card-text"> The development about this web, my first website.</p>
+                    <a href="{{ url_for('p2website') }}" class="btn btn-primary">See more...</a>
+                </div>
+            </div>
+        </div>
+ 
+
+        
+    </div>
+</div>
+{% endblock %}

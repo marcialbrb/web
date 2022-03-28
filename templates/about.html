@@ -1,0 +1,53 @@
+{% extends "base/base.html" %}
+
+{% block body %}
+
+<div class="container" style="padding:10px">
+    <div class="row">
+        <!-- Lado izquierdo, foto de perfil y datos-->
+        <div class="col-sm-4">
+            <img src="{{url_for('static',filename='img/avatar.png')}}" class="img-thumbnail" alt="">
+            
+                <i class="bi bi-person"></i> <b>Full Name:</b> Marcial Barboza<br>
+                <i class="bi bi-pin-map"></i> <b>Born:</b> Caracas, Venezuela<br>
+                <i class="bi bi-geo-alt"></i> <b>Living:</b> Buenos Aires, Argentina<br>
+                <i class="bi bi-gift"></i> <b>Birthday:</b> 4th Jannuary<br>
+                <i class="bi bi-palette"></i> <b>Favorite Color:</b> Purple<br>
+                <i class="bi bi-music-note-list"></i> <b>Favorite Music:</b> Rap<br>
+                <br><br>
+                <p><em>"El planeta y la luna, en órbita circulan<br>Tal vez no son más que dos gotas de alguna laguna..."</em></p>
+                <figcaption class="blockquote-footer">
+                    Canserbero in <cite title="Tiempos de cambio">Tiempos de cambio</cite>
+                </figcaption>
+            
+        </div>
+        
+        <!-- Lado derecho, información-->
+        <div class="col">
+            
+            <h1 class="display-1"><b>ABOUT ME...</b></h1>
+            <p class="lead">Hey, if you are here that means you want to know more about me, my hobbies, tastes and so on.<br></p>
+
+            <p>My name is <b>Marcial Barboza</b>, i'm 25 years old, and i was born in Caracas, Venezuela. I'm lived there until 2017.<br></p>
+                
+            <p>Now i'm living in Buenos Aires, Argentina. Since 2019 i'm studdying <b>Telecommunication Engineering</b> in Universidad Nacional de San Martín, i love all about communications, is amazing like two persons OR MORE can talk being so far away. I hope someday be a great enginner and help to a lot people to be conected.</p>
+
+            <p><b>Technology</b> is something I really like and I want to dedicate the rest of my life. That is why in addition to studying engineering, I am training myself to learn and dominate the Python language, so I can implement it in my university career.</p>
+            
+            <p>Web development is something I also like, and I am learning it a bit at a time.</p>
+            
+            <p>I am a great <b>art lover</b>, I love to draw, always with pencil. I started since I was a kid, when I was 9 years old I participated in an art contest in Venezuela, I was 6th place, among 2500 kids my age. It was a beautiful experience and it is one of those things that inspire me a lot when I create my art.</p>
+
+            <p>Besides drawing, I also like to go out and <b>take photos</b>, of landscapes, of my friends or of simple strangers, I feel that everywhere there is a photo deserving to be marked.</p>
+            
+            <p>Finally, I like <b>sports</b> very much, playing volleyball or football, mainly, and in the latter I can spend many hours watching games.</p>
+            
+            <p>In this page you will be able to see my projects, part of my art and my tastes, so I hope you enjoy it.</p>
+
+            <h6 class="display-6"><p>Thanks for read me, nice to meet you!</p></h6>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}

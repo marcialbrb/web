@@ -1,0 +1,45 @@
+{% extends "base/base.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block body %}
+<!--HEADER-->
+    <div class="container">
+        <div class="row text-center">
+            <h1 class="display-1"><b>CONTACT ME</b></h1>
+            <p class="lead">If you want to contact me, you can do it here!</p>  
+        </div>
+        <div class="row text-center">
+            <div class="col">
+                <!--REDES-->
+                <h1>
+                    <a href="http://www.instagram.com/marcialbrb" target="_blank" style="color:black"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.twitter.com/marshallbar/" target="_blank" style="color:black"><i class="bi bi-twitter"></i></a>
+
+                    <a href="https://www.facebook.com/marcialbrb/" target="_blank" style="color:black"><i class="bi bi-facebook"></i></a>
+                    
+                    <a href="https://discordapp.com/users/126451722024386560" target="_blank" style="color:black"><i class="bi bi-discord"></i></a>
+
+                    <a href="https://www.linkedin.com/in/marcialbarboza/" target="_blank" style="color:black"><i class="bi bi-linkedin"></i></a>
+
+                    
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!--COMMENT-->
+    <div class="container" style="padding:50px">    
+        {% from "_macro.html" import render_field %} <!-- No se usan por implementarse Flask con Bootstrap-->
+        <form  method="POST">
+            {{ wtf.form_field(form.nombre) }}
+            {{ wtf.form_field(form.email) }}
+            {{ wtf.form_field(form.comment) }}
+            <br>
+
+            <button type="submit" class="btn btn-dark"> Enviar </button>
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}"/>
+
+            {{ form.honeypot }}
+        </form>
+
+    </div>
+{% endblock %}

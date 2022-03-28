@@ -1,0 +1,183 @@
+{% extends 'base/base.html' %}
+
+{% block body%}
+
+<!-- HEADER --> 
+<div class="row-fluid">
+    <div class="container">
+        
+        <figure class="text-center">
+            <h1 class="display-1"><b>GALLERY - PHOTOGRAPHY</b></h1>
+            <p class="lead">
+                See through my eyes
+            </p>
+        </figure>
+    </div>
+</div>
+
+
+
+<!--GALERIA-->
+<div class="row m-2">
+    <!-- LAND1 & PORT 1-->
+    <div class="col-lg-4 mb-4">
+        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage1">
+            <img class="w-100 mb-2 rounded" src="{{ url_for('static', filename='img/gallery/photo/land1.jpg')}}" alt="">
+        </a>
+        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage2">
+            <img class="w-100 mb-2 rounded" src="{{ url_for('static', filename='img/gallery/photo/port1.jpg')}}" alt="">
+        </a>
+    </div>
+    <!-- LAND2 & PORT 2-->
+    <div class="col-lg-4 mb-4">
+        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage3">
+            <img class="w-100 mb-2 rounded" src="{{ url_for('static', filename='img/gallery/photo/port2.jpg')}}" alt="">
+        </a>
+        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage4">
+            <img class="w-100 mb-2 rounded" src="{{ url_for('static', filename='img/gallery/photo/land2.jpg')}}" alt="">
+        </a>
+    </div>
+    <!-- LAND3 & PORT 3-->
+    <div class="col-lg-4 mb-4">
+        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage5">
+            <img class="w-100 mb-2 rounded" src="{{ url_for('static', filename='img/gallery/photo/land3.jpg')}}" alt="">
+        </a>
+        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage6">
+            <img class="w-100 mb-2 rounded" src="{{ url_for('static', filename='img/gallery/photo/port3.jpg')}}" alt="">
+        </a>
+    </div>
+    <!-- LAND4 & PORT 4-->
+    <div class="col-lg-4 mb-4">
+        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage7">
+            <img class="w-100 mb-2 rounded" src="{{ url_for('static', filename='img/gallery/photo/port4.jpg')}}" alt="">
+        </a>
+        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage8">
+            <img class="w-100 mb-2 rounded" src="{{ url_for('static', filename='img/gallery/photo/land4.jpg')}}" alt="">
+        </a>
+    </div>
+    <!-- LAND5 & PORT 5-->
+    <div class="col-lg-4 mb-4">
+        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage9">
+            <img class="w-100 mb-2 rounded" src="{{ url_for('static', filename='img/gallery/photo/land5.jpg')}}" alt="">
+        </a>
+        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage10">
+            <img class="w-100 mb-2 rounded" src="{{ url_for('static', filename='img/gallery/photo/port5.jpg')}}" alt="">
+        </a>
+    </div>
+    <!-- LAND6 & PORT 6-->
+    <div class="col-lg-4 mb-4">
+        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage11">
+            <img class="w-100 mb-2 rounded" src="{{ url_for('static', filename='img/gallery/photo/port6.jpg')}}" alt="">
+        </a>
+        <a href="#!" data-bs-toggle="modal" data-bs-target="#modalImage12">
+            <img class="w-100 mb-2 rounded" src="{{ url_for('static', filename='img/gallery/photo/land6.jpg')}}" alt="">
+        </a>
+    </div>
+</div>
+
+<!--MODAL -->
+
+    <!--LAND 1-->
+    <div tabindex="-1" aria-labelledby="modalImage1" aria-hidden="true" class="modal fade" id="modalImage1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="{{ url_for('static', filename='img/gallery/photo/land1.jpg')}}" alt="">
+            </div>
+        </div>
+    </div>
+    <!--PORT 1-->
+    <div tabindex="-1" aria-labelledby="modalImage2" aria-hidden="true" class="modal fade" id="modalImage2">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="{{ url_for('static', filename='img/gallery/photo/port1.jpg')}}" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--LAND 2-->
+    <div tabindex="-1" aria-labelledby="modalImage4" aria-hidden="true" class="modal fade" id="modalImage4">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="{{ url_for('static', filename='img/gallery/photo/land2.jpg')}}" alt="">
+            </div>
+        </div>
+    </div>
+    <!--PORT 2-->
+    <div tabindex="-1" aria-labelledby="modalImage3" aria-hidden="true" class="modal fade" id="modalImage3">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="{{ url_for('static', filename='img/gallery/photo/port2.jpg')}}" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--LAND 3-->
+    <div tabindex="-1" aria-labelledby="modalImage5" aria-hidden="true" class="modal fade" id="modalImage5">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="{{ url_for('static', filename='img/gallery/photo/land3.jpg')}}" alt="">
+            </div>
+        </div>
+    </div>
+    <!--PORT 3-->
+    <div tabindex="-1" aria-labelledby="modalImage6" aria-hidden="true" class="modal fade" id="modalImage6">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="{{ url_for('static', filename='img/gallery/photo/port3.jpg')}}" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--LAND 4-->
+    <div tabindex="-1" aria-labelledby="modalImage8" aria-hidden="true" class="modal fade" id="modalImage8">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="{{ url_for('static', filename='img/gallery/photo/land4.jpg')}}" alt="">
+            </div>
+        </div>
+    </div>
+    <!--PORT 4-->
+    <div tabindex="-1" aria-labelledby="modalImage7" aria-hidden="true" class="modal fade" id="modalImage7">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="{{ url_for('static', filename='img/gallery/photo/port4.jpg')}}" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--LAND 5-->
+    <div tabindex="-1" aria-labelledby="modalImage9" aria-hidden="true" class="modal fade" id="modalImage9">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="{{ url_for('static', filename='img/gallery/photo/land5.jpg')}}" alt="">
+            </div>
+        </div>
+    </div>
+    <!--PORT 5-->
+    <div tabindex="-1" aria-labelledby="modalImage10" aria-hidden="true" class="modal fade" id="modalImage10">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="{{ url_for('static', filename='img/gallery/photo/port5.jpg')}}" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--LAND 6-->
+    <div tabindex="-1" aria-labelledby="modalImage12" aria-hidden="true" class="modal fade" id="modalImage12">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="{{ url_for('static', filename='img/gallery/photo/land6.jpg')}}" alt="">
+            </div>
+        </div>
+    </div>
+    <!--PORT 6-->
+    <div tabindex="-1" aria-labelledby="modalImage11" aria-hidden="true" class="modal fade" id="modalImage11">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <img src="{{ url_for('static', filename='img/gallery/photo/port6.jpg')}}" alt="">
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
